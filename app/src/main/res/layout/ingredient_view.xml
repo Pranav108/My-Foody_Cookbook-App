@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/detail_top_margin"
+    android:background="@color/layout_background"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ingredient_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="Address :"
+        android:textColor="@color/black"
+        android:textSize="@dimen/detail_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/measurement_tv"
+        android:layout_width="0dp"
+        android:fontFamily="@font/amarante"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="Example"
+        android:textColor="@color/measurment_color"
+        android:textSize="@dimen/detail_text_size"
+        android:textStyle="bold" />
+</LinearLayout>

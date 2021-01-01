@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="18dp"
+    android:background="@color/layout_background"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:id="@+id/image"
+            android:background="@drawable/rounded_rectangle_green"
+            tools:src="@drawable/dinner"
+            android:layout_margin="@dimen/border_margin"
+            android:scaleType="fitXY"
+            android:elevation="12dp"/>
+
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="29dp"
+            android:elevation="16dp"
+            android:src="@drawable/favorite" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/border_margin"
+        android:layout_marginRight="@dimen/border_margin"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/amarante"
+        android:paddingLeft="@dimen/border_margin"
+        android:text="Example"
+        android:textSize="20sp" />
+
+</LinearLayout>

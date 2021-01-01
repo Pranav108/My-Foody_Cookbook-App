@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/layout_background"
+    android:id="@+id/detail_scroll_view"
+    android:clipToPadding="false"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="@dimen/border_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavouriteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="Favourite Recipes"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="@dimen/border_margin"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fav_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_view"/>
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty, Add Some Recipes"
+        android:textSize="30dp"
+        android:layout_margin="@dimen/border_margin"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>
+</ScrollView>
